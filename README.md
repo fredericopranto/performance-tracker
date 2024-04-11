@@ -4,13 +4,13 @@
 
 This is a software tool developed to help software teams measure their performance. This measurement is based on four different metrics: Deployment Frequency, Lead Time For Changes, Time To Restore Service and Change Failure Rate. These metrics can be applied to projects located in GitHub using the tool.
 
-This project is part of a research focused on eploring the the impact of DevOps practices on open source software projects. The projects used in the study are Angular, Kubernetes, TensorFlow and Visual Studio Code
+This project is part of a research focused on exploring the the impact of DevOps practices on open source software projects. The projects used in the study are Angular, Grafana, Kubernetes, TensorFlow and Visual Studio Code.
 
 ## Running the application
 
 In order to run the application, you must download it from this repository and follow these steps:
 
-1. We need to decide the period which we want to collect data from. In the .env file, we will specify the starting date in "SINCE_DAY" and the ending day of the period in "UNTIL_DAY". The following example shows the appropiate format: 2022-06-01T00:00:00+00:00
+1. We need to decide the period which we want to collect data from. In the .env file, we will specify the starting date in "SINCE_DAY" and the ending day of the period in "UNTIL_DAY". The following example shows the appropiate format: 2023-07-01T00:00:00+00:00.
 
 2. We will need a GitHub account to generate a personal access token. If you want to know more about how to create a personal access token and why are they useful, please visit the following website: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token . The generated token will be specified in "GITHUB_PASSWORD" and our GitHub username in "GITHUB_USER".
 
@@ -19,6 +19,7 @@ In order to run the application, you must download it from this repository and f
 | Project            | GITHUB_OWNER | GITHUB_REPOSITORY | BUG_LABEL |
 | ------------------ | ------------ | ----------------- | --------- |
 | Angular            | angular      | angular           | bug       |
+| Grafana            | grafana      | grafana           | type/bug  |
 | Kubernetes         | kubernetes   | kubernetes        | kind/bug  |
 | TensorFlow         | tensorflow   | tensorflow        | type:bug  |
 | Visual Studio Code | microsoft    | vscode            | bug       |
